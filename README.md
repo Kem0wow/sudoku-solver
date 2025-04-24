@@ -1,19 +1,19 @@
-# 🧠 Pure Sudoku Solver (TXT Only)
+# Pure Sudoku Solver (TXT Only)
 
 This is a pure algorithmic Sudoku generator and solver project that works **exclusively with `.txt` files**. It supports standard Sudoku sizes: **4x4**, **9x9**, and **16x16**. The project focuses on improving core programming skills and logic implementation without relying on external interfaces.
 
 ---
 
-## 📦 Project Structure
+## Project Structure
 
-### ✅ 1. `generate_sudoku_txt.py`
+### 1. `generate_sudoku_txt.py`
 Generates a valid Sudoku puzzle with a unique solution, removes a specified number of cells, and writes the result to a `.txt` file.
 
 ```bash
 python generate_sudoku_txt.py
 ```
 
-#### 🔧 Configuration (inside the file):
+#### Configuration (inside the file):
 ```python
 size = 9           # Must be one of [4, 9, 16]
 empty_cells = 40   # Number of cells to leave empty
@@ -21,7 +21,7 @@ empty_cells = 40   # Number of cells to leave empty
 
 ---
 
-### 📄 2. TXT File Format
+### 2. TXT File Format
 
 Each line represents one row of the Sudoku board. Values are space-separated. Use a `.` (dot) for empty cells.
 
@@ -40,29 +40,29 @@ Each line represents one row of the Sudoku board. Values are space-separated. Us
 
 ---
 
-### 🔍 3. `preparation_txt.py`
+### 3. `preparation_txt.py`
 Reads a `.txt` Sudoku puzzle, replaces empty cells (`.`) with `0`, and returns a `NumPy` array for the solver to use. Includes validation of board size and format.
 
 ---
 
-### 🧠 4. `solver.py`
+### 4. `solver.py`
 Efficiently solves Sudoku puzzles of size 4x4, 9x9, or 16x16 using **backtracking algorithm**. Designed for readability and performance.
 
 ---
 
-### 🚀 5. `main.py`
+### 5. `main.py`
 Runs the full process: loads the `.txt` file, solves the Sudoku puzzle, and optionally prints or saves the solution.
 
 ---
 
-## ⚠️ Limits
+## Limits
 - Only supports Sudoku sizes **4x4**, **9x9**, and **16x16**.
 - If any other size is used, the system will raise an error.
 - TXT format only. CSV is not supported in this version.
 
 ---
 
-## ✅ Features
+## Features
 - Pure algorithmic logic
 - Easy to read and modify
 - Fast solving via backtracking
@@ -71,15 +71,15 @@ Runs the full process: loads the `.txt` file, solves the Sudoku puzzle, and opti
 
 ---
 
-## 🧪 Future Ideas
+## Future Ideas
 - Add `.csv` support
 - Build GUI using Tkinter or PyQt
 - Add puzzle difficulty rating
-- Integrate with ML model for puzzle generation
+- Integrate with ML model for puzzle generation and solving
 
 ---
 
-## 👨‍💻 Author
+## Author
 Developed by a passionate algorithm enthusiast aiming for mastery in logic-based problem solving.
 
 ---
