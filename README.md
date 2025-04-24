@@ -6,11 +6,11 @@ This is a pure algorithmic Sudoku generator and solver project that works **excl
 
 ## Project Structure
 
-### 1. `generate_sudoku_txt.py`
+### 1. `_generate_board.py`
 Generates a valid Sudoku puzzle with a unique solution, removes a specified number of cells, and writes the result to a `.txt` file.
 
 ```bash
-python generate_sudoku_txt.py
+python _generate_board.py
 ```
 
 #### Configuration (inside the file):
@@ -40,12 +40,12 @@ Each line represents one row of the Sudoku board. Values are space-separated. Us
 
 ---
 
-### 3. `preparation_txt.py`
+### 3. `txt_prep.py`
 Reads a `.txt` Sudoku puzzle, replaces empty cells (`.`) with `0`, and returns a `NumPy` array for the solver to use. Includes validation of board size and format.
 
 ---
 
-### 4. `solver.py`
+### 4. `_solver.py`
 Efficiently solves Sudoku puzzles of size 4x4, 9x9, or 16x16 using **backtracking algorithm**. Designed for readability and performance.
 
 ---
